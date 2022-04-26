@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
@@ -28,9 +27,12 @@ def max_eig(e):
 [x, y] = generate_dataset1()
 [x2, y2] = generate_dataset2()
 
+######################################
+# To check a different data set, change the x and y to x2 and y2 below
 x_m = np.mean(x)
 y_m = np.mean(y)
 X = np.column_stack((x, y))
+######################################
 
 C = np.cov(X.T)
 e, V = np.linalg.eig(C)
@@ -39,7 +41,6 @@ max_eig, index = max_eig(e)
 
 u = V[:, index]
 Z = np.dot(X, u)
-### Havent centered the dataset yet, i.e. shift data keeping centroid at the origin, then it'll be fixed
 Y = np.outer(Z, u)
 plt.scatter(X[:, 0], X[:, 1])
 plt.axline(Y.T[:, 0] + [x_m, y_m], Y.T[:, 1] + [x_m, y_m], color='orange')
