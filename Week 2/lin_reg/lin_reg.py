@@ -30,11 +30,11 @@ def grad_desc(theta_new):
     old_cost = 0
     while abs(new_cost-old_cost) > epsilon:
         # for i in range(len(theta)):
-            # term = 0
-            # for index in range(model.shape[0]):
-            #     term += (h(model[index], theta_old) - Y[index])*model[index][i]
-            # term = (term*rate)/(model.shape[0])
-            # theta_new[i] -= term
+        # term = 0
+        # for index in range(model.shape[0]):
+        #     term += (h(model[index], theta_old) - Y[index])*model[index][i]
+        # term = (term*rate)/(model.shape[0])
+        # theta_new[i] -= term
         theta_new = theta_new - (rate*(np.matmul(model.T, g(theta_new).copy() - Y))/model.shape[0])
         old_cost = new_cost
         new_cost = cost(theta_new)
@@ -46,7 +46,6 @@ regions = data['Region']
 model = pd.DataFrame(data, columns=['Temperature (T)', 'Rainfall (mm)', 'Humidity (%)']).values
 model = np.hstack((np.ones((15, 1)), model))
 theta = np.zeros((model.shape[1], 1))
-
 
 temp, rain, humid = input("enter the temperature(F), Rainfall(mm) and Humidity(%): ").split()
 x = [1, float(temp), float(rain), float(humid)]
