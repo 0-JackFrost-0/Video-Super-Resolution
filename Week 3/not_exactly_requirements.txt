@@ -1,0 +1,5 @@
+These are the libraries that need to be installed
+
+tqdm
+matplotlib
+numpy opencv-python
