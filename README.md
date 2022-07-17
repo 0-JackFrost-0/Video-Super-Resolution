@@ -12,5 +12,12 @@ Things that I've learnt during SoC:
 2. Some basics of Image processing
     1. Blur kernels
     2. Convolution
-
+    3. PSNR
+    4. Conversion of RGB images to YCbCr, Y and others
+3. Miscellaneous
+    1. Markdown
+    2. Using OpenCV to extract frames from a video
+    3. Git and version control
+    4. Some basics of vim
 ---
+Week 1: (
