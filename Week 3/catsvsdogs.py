@@ -11,7 +11,6 @@ import torch.optim as optim
 
 REBUILD_DATA = True ### Can make this False after first run
 
-
 class DogsVSCats:
     IMG_SIZE = 50
     CATS = './gdrive/MyDrive/PetImages/Cat'
