@@ -20,4 +20,4 @@ Things that I've learnt during SoC:
     3. Git and version control
     4. Some basics of vim
 ---
-Week 1: (
+Week 1: In the first week of the SoC, we learnt about principal component analysis (PCA), brushed upon python and terminal commands. We applied PCA on the MNIST dataset and compressed the dataset to _10%_ of it's original size, without losing much data
