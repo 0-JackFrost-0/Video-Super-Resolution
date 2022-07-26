@@ -1,6 +1,7 @@
 # Video-Super-Resolution
 ### Om Godage
 ---
+
 Week 1: In the first week of the SoC, we learnt about principal component analysis (PCA), brushed upon python and terminal commands. We applied PCA on the MNIST dataset and compressed the dataset to __10%__ of it's original size, without losing much data
 Week 2: We learnt about linear and  logistic regression, learnt aobut supervised and unsupervised learning, finished the first 4 weeks of the Andrew Ng course on Machine Learning, wrote the very first machine learning code to identify handwritten digits from the MNIST dataset.
 Week 3: We learnt about Neural Networks, and wrote a program to identify Cats and Dogs from their images.
